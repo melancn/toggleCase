@@ -5,25 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ULer"
         mc:Ignorable="d"
-        Title="大小写转换" Height="350" Width="500" MinHeight="300" MinWidth="400">
+        Title="大小写转换" Height="350" Width="520" MinHeight="300" MinWidth="520">
     <Grid>
         <Grid.ColumnDefinitions>
 
-            <ColumnDefinition MinWidth="100"/>
+            <ColumnDefinition MinWidth="300"/>
 
-            <ColumnDefinition MinWidth="100"/>
+            <ColumnDefinition MinWidth="50" Width="200"/>
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
 
+            <RowDefinition Height="45"/>
+
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
             <RowDefinition/>
 
-            <RowDefinition Height="75"/>
-
         </Grid.RowDefinitions>
-        <TextBox x:Name="textBox" TextWrapping="Wrap" Margin="0" Grid.ColumnSpan="2" MinWidth="300" MinHeight="200"/>
-        <Button x:Name="up" Content="转换为大写" Margin="0" Click="up_Click" Grid.Row="1"/>
-        <Button x:Name="low" Content="转换为小写" Margin="0" Click="low_Click" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="textBox" TextWrapping="Wrap" Margin="0" MinWidth="300" MinHeight="200" Grid.RowSpan="20"/>
+        <Button x:Name="up" Content="转换为大写" Margin="5" Click="up_Click" Grid.Column="1"/>
+        <Button x:Name="low" Content="转换为小写" Margin="5" Click="low_Click" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="CamelCaseF" Content="骆峰-首字母大写" Margin="5" Grid.Row="2" Grid.Column="1" Click="CamelCaseF_Click"/>
+        <Button x:Name="CamelCase" Content="骆峰-首字母小写" Margin="5" Grid.Row="3" Grid.Column="1" Click="CamelCase_Click"/>
+        <Button x:Name="UnderScoreCase" Content="下划线" Margin="5" Grid.Row="4" Grid.Column="1" Click="UnderScoreCase_Click"/>
 
     </Grid>
 </Window>
