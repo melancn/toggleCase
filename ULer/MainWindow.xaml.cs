@@ -28,11 +28,15 @@ namespace ULer
         private void up_Click(object sender, RoutedEventArgs e)
         {
             textBox.Text = textBox.Text.ToUpper();
+            textBox.Focus();
+            textBox.SelectAll();
         }
 
         private void low_Click(object sender, RoutedEventArgs e)
         {
             textBox.Text = textBox.Text.ToLower();
+            textBox.Focus();
+            textBox.SelectAll();
         }
 
         private void CamelCaseF_Click(object sender, RoutedEventArgs e)
@@ -45,6 +49,8 @@ namespace ULer
             }
 
             textBox.Text = n;
+            textBox.Focus();
+            textBox.SelectAll();
         }
 
         private void CamelCase_Click(object sender, RoutedEventArgs e)
@@ -66,6 +72,8 @@ namespace ULer
             }
 
             textBox.Text = n;
+            textBox.Focus();
+            textBox.SelectAll();
         }
 
         private void UnderScoreCase_Click(object sender, RoutedEventArgs e)
@@ -90,6 +98,8 @@ namespace ULer
                 }
             }
             textBox.Text = n;
+            textBox.Focus();
+            textBox.SelectAll();
         }
     }
 }

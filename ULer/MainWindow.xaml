@@ -28,9 +28,9 @@
         <TextBox x:Name="textBox" TextWrapping="Wrap" Margin="0" MinWidth="300" MinHeight="200" Grid.RowSpan="20"/>
         <Button x:Name="up" Content="转换为大写" Margin="5" Click="up_Click" Grid.Column="1"/>
         <Button x:Name="low" Content="转换为小写" Margin="5" Click="low_Click" Grid.Row="1" Grid.Column="1"/>
-        <Button x:Name="CamelCaseF" Content="骆峰-首字母大写" Margin="5" Grid.Row="2" Grid.Column="1" Click="CamelCaseF_Click"/>
-        <Button x:Name="CamelCase" Content="骆峰-首字母小写" Margin="5" Grid.Row="3" Grid.Column="1" Click="CamelCase_Click"/>
-        <Button x:Name="UnderScoreCase" Content="下划线" Margin="5" Grid.Row="4" Grid.Column="1" Click="UnderScoreCase_Click"/>
+        <Button x:Name="CamelCaseF" Content="下划线转骆峰-首字母大写" Margin="5" Grid.Row="2" Grid.Column="1" Click="CamelCaseF_Click"/>
+        <Button x:Name="CamelCase" Content="下划线转骆峰-首字母小写" Margin="5" Grid.Row="3" Grid.Column="1" Click="CamelCase_Click"/>
+        <Button x:Name="UnderScoreCase" Content="骆峰转下划线" Margin="5" Grid.Row="4" Grid.Column="1" Click="UnderScoreCase_Click"/>
 
     </Grid>
 </Window>
